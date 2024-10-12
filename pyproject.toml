@@ -2,7 +2,7 @@
 name = "tcc"
 version = "0.1.0"
 description = "exibir dados"
-authors = ["Ketlyn Athan <ketlynathan99@outlok.com>"]
+authors = ["Ketlyn Athan"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
