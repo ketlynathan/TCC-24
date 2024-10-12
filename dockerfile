@@ -1,4 +1,4 @@
-FROM python:3.12
+FROM python:3.11.9
 RUN pip install poetry
 COPY . /src
 WORKDIR /src
