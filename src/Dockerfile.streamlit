@@ -14,7 +14,7 @@ COPY . /src
 RUN if [ -f requirements.txt ]; then pip install --no-cache-dir -r requirements.txt; else echo "requirements.txt not found, skipping..."; fi
 
 # Expor a porta 8501 para o Streamlit
-EXPOSE 5000
+EXPOSE 8501
 
-# Comando de entrada para iniciar o Streamlit na porta correta
-ENTRYPOINT ["python", "api.py"]
+# Comando de entrada para iniciar o Streamlit
+ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
