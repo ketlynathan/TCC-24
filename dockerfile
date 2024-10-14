@@ -1,23 +1,20 @@
-# Usando uma imagem base Python
-FROM python:3.12-slim
+# Usar uma imagem base do Python 3.12
+FROM python:3.12
 
-# Definindo o diretório de trabalho
-WORKDIR /app
+# Atualizar o pip para a versão mais recente
+RUN pip install --upgrade pip
 
-# Copiando o pyproject.toml e poetry.lock
-COPY pyproject.toml poetry.lock /app/
+# Definir o diretório de trabalho no container
+WORKDIR /src
 
-# Instalando o poetry
-RUN pip install poetry
+# Copiar todos os arquivos do projeto para o diretório de trabalho
+COPY . /src
 
-# Instalando as dependências do projeto
-RUN poetry install --no-dev
+# Instalar as dependências listadas no pyproject.toml
+RUN pip install poetry && poetry install --no-root
 
-# Copiando o código-fonte
-COPY . /app
-
-# Expondo a porta 8501, que é onde o Streamlit roda por padrão
+# Expor a porta 8501 para o Streamlit
 EXPOSE 8501
 
-# Definindo o comando para rodar o projeto com Streamlit
-CMD ["poetry", "run", "streamlit", "run", "main.py", "--server.port=8501", "--server.enableCORS=false"]
+# Comando de entrada para iniciar o Streamlit
+ENTRYPOINT ["poetry", "run", "streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
