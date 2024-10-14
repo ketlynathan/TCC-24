@@ -17,4 +17,4 @@ RUN pip install poetry && poetry install --no-root
 EXPOSE 8501
 
 # Comando de entrada para iniciar o Streamlit
-ENTRYPOINT ["poetry", "run", "streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+ENTRYPOINT ["poetry", "run", "streamlit", "run", "main.py", "--server.port=8501", "--server.address=0.0.0.0"]

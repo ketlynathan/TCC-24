@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: streamlit-hello-world
+    env: python
+    buildCommand: "poetry install"
+    startCommand: "poetry run streamlit run main.py --server.port=$PORT --server.enableCORS=false"
