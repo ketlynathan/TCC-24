@@ -13,8 +13,6 @@ WORKDIR /src
 # Copiar todos os arquivos do projeto para o diretório de trabalho
 COPY . /src
 
-# Criar um ambiente virtual com a versão do Python especificada
-RUN poetry env use python
 
 # Instalar as dependências listadas no pyproject.toml
 RUN poetry install --no-root
