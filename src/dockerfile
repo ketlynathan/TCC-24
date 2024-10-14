@@ -4,14 +4,20 @@ FROM python:3.12
 # Atualizar o pip para a versão mais recente
 RUN pip install --upgrade pip
 
+# Instalar o Poetry
+RUN pip install poetry
+
 # Definir o diretório de trabalho no container
 WORKDIR /src
 
 # Copiar todos os arquivos do projeto para o diretório de trabalho
 COPY . /src
 
+# Criar um ambiente virtual com a versão do Python especificada
+RUN poetry env use python
+
 # Instalar as dependências listadas no pyproject.toml
-RUN pip install poetry && poetry install --no-root
+RUN poetry install --no-root
 
 # Expor a porta 8501 para o Streamlit
 EXPOSE 8501
