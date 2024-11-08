@@ -14,7 +14,7 @@ WORKDIR /src
 COPY . /src
 
 # Instalar as dependências listadas no pyproject.toml
-RUN pip install uv && uv sync
+RUN  uv sync
 
 # Expor a porta 8501 para o Streamlit
 EXPOSE 8501
