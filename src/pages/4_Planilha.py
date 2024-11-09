@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import datetime
-import seaborn as sns
 from io import BytesIO
 
 # Função para gerar o modelo de xlsx
