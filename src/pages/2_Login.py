@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 from datetime import timedelta
 from rich import print as rprint
 from lib.http import create_authenticated_client
