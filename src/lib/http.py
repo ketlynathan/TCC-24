@@ -1,7 +1,7 @@
 import os
 import re
-
 import httpx
+
 from dotenv import load_dotenv
 
 from .redis import redis
@@ -68,13 +68,14 @@ def create_authenticated_client() -> httpx.Client:
         headers={
             "Cookie": "_strava4_session=gbllphql80760vcjr2r8hghdurfbsrao",
             "Content-Type": "application/x-www-form-urlencoded",
-            "Referer": f"https://www.strava.com/oauth/authorize?client_id={os.getenv("STRAVA_CLIENT_ID")}&response_type=code&redirect_uri=http://localhost/exchange_token&approval_prompt=force&scope=activity:read_all",
+            "Referer": f"https://www.strava.com/oauth/authorize?client_id={"137770"}&response_type=code&redirect_uri=http://localhost/exchange_token&approval_prompt=force&scope=activity:read_all",
         },
     )
 
     if auth_response.status_code != 302:
         raise StravaAuthError(
-            f"Authorization request failed with status {auth_response.status_code}"
+            f"Authorization request failed with status {
+                auth_response.status_code}"
         )
 
     auth_code_pattern = r"code=([^&]+)"
@@ -89,7 +90,7 @@ def create_authenticated_client() -> httpx.Client:
         url="/oauth/token",
         params={
             "client_id": "137770",
-            "client_secret":"7b2bd8352031657fff4fcb67a14de8b51d149332",
+            "client_secret": "7b2bd8352031657fff4fcb67a14de8b51d149332",
             "code": authorization_code,
             "grant_type": "authorization_code",
         },

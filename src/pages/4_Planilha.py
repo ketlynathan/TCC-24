@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 import datetime
 from io import BytesIO
 
@@ -116,7 +117,15 @@ if uploaded_file is not None:
                 #3ax_pizza.set_title(f'Dias Treinados por Atividade em {meses[mes_selecionado]}/{ano_selecionado}')
 
                 # Convertendo e filtrando dados
-                df_filtrado['Distancia'] = df_filtrado['Distancia'].astype(str).str.replace(',', '.').str.extract('(\d+\.\d+)')[0].astype(float)
+                df_filtrado.loc[:, 'Distancia'] = (
+                df_filtrado['Distancia']
+                .astype(str)
+                .str.replace(',', '.', regex=False)
+                .str.extract(r'(\d+\.\d+)')[0]
+                .astype(float)
+                )
+
+                # Filtra as distâncias maiores que 0 e calcula o total por tipo
                 df_kms = df_filtrado[df_filtrado['Distancia'] > 0]
                 total_kms_por_tipo = df_kms.groupby('Tipo')['Distancia'].sum().reset_index()
 

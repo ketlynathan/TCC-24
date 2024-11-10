@@ -3,7 +3,7 @@ import os
 import time
 
 # Define a pasta que contém os arquivos de música
-music_dir = "pages/audio"  
+music_dir = "src/pages/audio"  
 
 # Lista os arquivos de música
 music_files = [f for f in os.listdir(music_dir) if f.endswith((".mp3", ".wav", ".ogg"))]

@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 
-st.image("pages/img/Movimente-se.png")
+st.image("src/pages/img/Movimente-se.png")
 st.write("# Bem vindo ao MOVIMENTE-SE! 👋")
 
 st.sidebar.success("Selecione opção desejada.")

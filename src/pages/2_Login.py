@@ -1,12 +1,13 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import seaborn as sns
 from datetime import timedelta
 from rich import print as rprint
-from lib.http import create_authenticated_client
+from src.lib.http import create_authenticated_client
 
 # Caminho da imagem da logo
-LOGO_PATH = "pages/img/Movimente-se.png"
+LOGO_PATH = "src/pages/img/Movimente-se.png"
 
 # Streamlit layout configuration
 st.set_page_config(layout="wide", page_title="Dashboard de Atividades")
@@ -226,17 +227,22 @@ def dashboard():
             with col8:
                 st.pyplot(fig2)
 
-            # Improved Average speed chart using Seaborn
-            avg_speed_df = filtered_df.groupby("type_pt")["average_speed"].mean().reset_index()
+        avg_speed_df = filtered_df.groupby("type_pt")["average_speed"].mean().reset_index()
 
-            fig3, ax3 = plt.subplots(figsize=(12, 6))
-            sns.barplot(data=avg_speed_df, x="type_pt", y="average_speed", palette="viridis", ax=ax3)
-            ax3.set_ylabel('Velocidade Média (m/s)')
-            ax3.set_xlabel('Tipo de Atividade')
-            ax3.set_title('Velocidade Média por Tipo de Atividade')
-            sns.despine()
+            # Configuração da figura e do eixo
+        fig3, ax3 = plt.subplots(figsize=(12, 6))
+        sns.barplot(data=avg_speed_df, x="type_pt", y="average_speed", palette="viridis", ax=ax3)
 
-            st.pyplot(fig3)
+        # Customização dos rótulos e do título
+        ax3.set_ylabel('Velocidade Média (m/s)')
+        ax3.set_xlabel('Tipo de Atividade')
+        ax3.set_title('Velocidade Média por Tipo de Atividade')
+
+            # Remoção das bordas do gráfico
+        sns.despine()
+
+            # Exibição do gráfico no Streamlit
+        st.pyplot(fig3)
 
 
 if __name__ == "__main__":
