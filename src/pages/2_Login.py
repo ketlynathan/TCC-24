@@ -4,10 +4,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import timedelta
 from rich import print as rprint
-from src.lib.http import create_authenticated_client
+from lib.http import create_authenticated_client
 
 # Caminho da imagem da logo
-LOGO_PATH = "src/pages/img/Movimente-se.png"
+LOGO_PATH = "pages/img/Movimente-se.png"
 
 # Streamlit layout configuration
 st.set_page_config(layout="wide", page_title="Dashboard de Atividades")

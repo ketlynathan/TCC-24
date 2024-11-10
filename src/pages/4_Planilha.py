@@ -159,10 +159,6 @@ if uploaded_file is not None:
                     colunas2[-1].metric("Provas", total_provas)
 
                    
-
-
-    
-
                 # Mostrar gráficos lado a lado
                 try:
                     col1, col2 = st.columns(2)
