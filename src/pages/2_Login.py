@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+import datetime
 from datetime import timedelta
 from rich import print as rprint
 from lib.http import create_authenticated_client
@@ -153,7 +154,7 @@ def dashboard():
         st.title("Dados do Atleta - Strava")
 
         # Display athlete profile image
-        st.image(athlete_data.get('profile'), caption=athlete_data.get('username'), width=150)
+        #st.image(athlete_data.get('profile'), caption=athlete_data.get('username'), width=150)
 
         # Convert relevant athlete data to DataFrame and display in Streamlit
         athlete_info = {
@@ -165,7 +166,23 @@ def dashboard():
             'Última atualização': athlete_data.get('updated_at')
         }
         athlete_df = pd.DataFrame([athlete_info])
-        st.write(athlete_data.get('state'))
+        
+        data_iso = athlete_data.get('updated_at')
+
+        # Convertendo a string ISO para um objeto datetime
+        data_datetime = datetime.datetime.fromisoformat(data_iso)
+
+        # Formatando a data como desejado (ex: 03/11/2024)
+        data_formatada = data_datetime.strftime("%d/%m/%Y")
+
+        # Exibindo a data formatada
+       
+        col1, col2, col3, col4 = st.columns(4)
+        col2.write(athlete_data.get('state'))
+        col1.write(athlete_data.get('username'))
+        col3.write(data_formatada)
+        col4.write("Ultima atualização")
+
 
         # Sidebar filters
         st.sidebar.header("Filtros")
@@ -242,7 +259,7 @@ def dashboard():
         sns.despine()
 
             # Exibição do gráfico no Streamlit
-        st.pyplot(fig3)
+        #st.pyplot(fig3)
 
 
 if __name__ == "__main__":
