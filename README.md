@@ -16,10 +16,10 @@ Ele visa melhorar a qualidade de vida dos usuários ao oferecer uma análise det
 ### Justificativa
 A tecnologia tem um papel crucial na promoção da saúde e no combate ao sedentarismo, uma das principais causas de doenças crônicas. Este projeto busca democratizar o acesso a ferramentas de monitoramento de atividades físicas, oferecendo uma solução gratuita e personalizada que pode impactar positivamente a qualidade de vida dos usuários.
 
-## Demonstração
+## Demonstração no Streamlit I
 <img width="776" height="615" alt="tela1" src="https://github.com/user-attachments/assets/a8b76609-a978-4137-992e-ca1f91e9e536" />
 
-
+## Demonstração no Streamlit II
 <img width="1234" height="574" alt="tela3" src="https://github.com/user-attachments/assets/9c7e3635-3653-464c-b894-d5f1b5f4b7f3" />
 
 ## Demonstração no Power BI
