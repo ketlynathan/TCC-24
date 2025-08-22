@@ -4,15 +4,17 @@
 
 ## Sobre o Projeto
 
-Este projeto é um sistema de análise de atividades físicas que integra dados de aplicativos e dispositivos wearables, utilizando a biblioteca **Streamlit** para criar uma aplicação web interativa. O objetivo é promover hábitos saudáveis, fornecendo insights personalizados sobre o desempenho físico dos usuários, ajudando a combater o sedentarismo.
+O **TCC-24** nasceu de uma necessidade pessoal: acompanhar meu progresso em atividades físicas de forma acessível e personalizada. Durante minha jornada para monitorar meu desempenho, percebi que muitas plataformas de análise de dados de atividades físicas cobram por funcionalidades avançadas, limitando o acesso a ferramentas que incentivem um estilo de vida ativo. Essa experiência inspirou meu Trabalho de Conclusão de Curso (TCC) em Engenharia de Software, resultando no desenvolvimento de um sistema que integra dados de dispositivos wearables e aplicativos, utilizando **Streamlit** para criar uma aplicação web interativa.
+
+A falta de ferramentas acessíveis para monitoramento contínuo de atividades físicas motivou este projeto. Ele visa melhorar a qualidade de vida dos usuários ao oferecer uma análise detalhada e personalizada do progresso físico, promovendo hábitos saudáveis e combatendo o sedentarismo. Com uma interface intuitiva e insights baseados em dados, o sistema centraliza informações de diferentes fontes, tornando o acompanhamento de atividades físicas mais simples e motivador.
 
 ### Objetivos
-- **Extração de dados**: Desenvolver algoritmos para coletar e limpar dados de dispositivos de monitoramento.
-- **Análise estatística**: Implementar funcionalidades para gerar relatórios e insights a partir dos dados.
-- **Interface intuitiva**: Criar uma aplicação Streamlit com visualizações interativas para acompanhamento do desempenho.
+- Desenvolver algoritmos para extração e limpeza de dados de dispositivos de monitoramento.
+- Implementar análises estatísticas para gerar insights úteis sobre o desempenho físico.
+- Criar uma interface interativa com Streamlit para visualização de métricas e progresso.
 
 ### Justificativa
-A falta de ferramentas acessíveis para monitoramento contínuo de atividades físicas motivou o desenvolvimento deste sistema. Ele visa melhorar a qualidade de vida dos usuários ao oferecer uma análise detalhada e personalizada do progresso físico.
+A tecnologia tem um papel crucial na promoção da saúde e no combate ao sedentarismo, uma das principais causas de doenças crônicas. Este projeto busca democratizar o acesso a ferramentas de monitoramento de atividades físicas, oferecendo uma solução gratuita e personalizada que pode impactar positivamente a qualidade de vida dos usuários.
 
 ## Demonstração
 <img width="776" height="615" alt="tela1" src="https://github.com/user-attachments/assets/a8b76609-a978-4137-992e-ca1f91e9e536" />
