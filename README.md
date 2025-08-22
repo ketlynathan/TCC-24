@@ -6,7 +6,7 @@
 
 O **TCC-24** nasceu de uma necessidade pessoal: acompanhar meu progresso em atividades físicas de forma acessível e personalizada. Durante minha jornada para monitorar meu desempenho, percebi que muitas plataformas de análise de dados de atividades físicas cobram por funcionalidades avançadas, limitando o acesso a ferramentas que incentivem um estilo de vida ativo. Essa experiência inspirou meu Trabalho de Conclusão de Curso (TCC) em Engenharia de Software, resultando no desenvolvimento de um sistema que integra dados de dispositivos wearables e aplicativos, utilizando **Streamlit** para criar uma aplicação web interativa.
 
-A falta de ferramentas acessíveis para monitoramento contínuo de atividades físicas motivou este projeto. Ele visa melhorar a qualidade de vida dos usuários ao oferecer uma análise detalhada e personalizada do progresso físico, promovendo hábitos saudáveis e combatendo o sedentarismo. Com uma interface intuitiva e insights baseados em dados, o sistema centraliza informações de diferentes fontes, tornando o acompanhamento de atividades físicas mais simples e motivador.
+Ele visa melhorar a qualidade de vida dos usuários ao oferecer uma análise detalhada e personalizada do progresso físico, promovendo hábitos saudáveis e combatendo o sedentarismo. Com uma interface intuitiva e insights baseados em dados, o sistema centraliza informações de diferentes fontes, tornando o acompanhamento de atividades físicas mais simples e motivador.
 
 ### Objetivos
 - Desenvolver algoritmos para extração e limpeza de dados de dispositivos de monitoramento.
