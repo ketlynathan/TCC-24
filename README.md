@@ -31,7 +31,7 @@ A tecnologia tem um papel crucial na promoção da saúde e no combate ao sedent
 - **Streamlit**: Framework para criação da interface web.
 - **Pandas/NumPy**: Manipulação e análise de dados.
 - **Matplotlib/Seaborn**: Visualização de dados.
-- **SQL SErver**: Armazenamento e manipulação dos dados.
+- **SQL Server**: Armazenamento e manipulação dos dados.
 - **PowerBI**: Para uso pessoal.
 - **APIs de wearables**: Integração com dispositivos como Strava.
 
