@@ -15,14 +15,21 @@ Este projeto é um sistema de análise de atividades físicas que integra dados 
 A falta de ferramentas acessíveis para monitoramento contínuo de atividades físicas motivou o desenvolvimento deste sistema. Ele visa melhorar a qualidade de vida dos usuários ao oferecer uma análise detalhada e personalizada do progresso físico.
 
 ## Demonstração
-![Interface do Streamlit](https://raw.githubusercontent.com/ketlynathan/TCC-24/main/images/streamlit-screenshot.png)
+<img width="776" height="615" alt="tela1" src="https://github.com/user-attachments/assets/a8b76609-a978-4137-992e-ca1f91e9e536" />
+
+
+<img width="1234" height="574" alt="tela3" src="https://github.com/user-attachments/assets/9c7e3635-3653-464c-b894-d5f1b5f4b7f3" />
+
+## Demonstração no Power BI
+
+<img width="965" height="549" alt="BI2" src="https://github.com/user-attachments/assets/e009dd7e-80a1-41c7-89c9-cf4177e0d863" />
 
 ## Tecnologias Utilizadas
 - **Python**: Linguagem principal para extração e análise de dados.
 - **Streamlit**: Framework para criação da interface web.
 - **Pandas/NumPy**: Manipulação e análise de dados.
 - **Matplotlib/Seaborn**: Visualização de dados.
-- **APIs de wearables** (se aplicável): Integração com dispositivos como Fitbit ou Strava.
+- **APIs de wearables**: Integração com dispositivos como Strava.
 
 ## Como Executar o Projeto
 1. Clone o repositório:
