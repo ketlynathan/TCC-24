@@ -31,6 +31,7 @@ A tecnologia tem um papel crucial na promoção da saúde e no combate ao sedent
 - **Streamlit**: Framework para criação da interface web.
 - **Pandas/NumPy**: Manipulação e análise de dados.
 - **Matplotlib/Seaborn**: Visualização de dados.
+- **PowerBI**: Para uso pessoal.
 - **APIs de wearables**: Integração com dispositivos como Strava.
 
 ## Como Executar o Projeto
