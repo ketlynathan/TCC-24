@@ -1,5 +1,5 @@
 # TCC-24: Sistema de Análise de Atividades Físicas
-![Banner ou logo do projeto]
+ *Fluxograma 
 <img width="891" height="208" alt="Fluxograma" src="https://github.com/user-attachments/assets/fe60d48a-ed3a-45d7-bf1f-e42a4930a7e3" />
 
 ## Sobre o Projeto
